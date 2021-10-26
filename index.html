@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src *; font-src *">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <title>GameTime</title>
+</head>
+<body>
+    <div class="main-wrapper">
+        <h1>Game Setup</h1>
+        <div class="input-div">
+            <label for="event">Event</label>
+            <input type="text" id="event" name="event" placeholder="Metro Athletics">
+        </div>
+        <div class="input-div">
+            <label for="league">League</label>
+            <input type="text" id="league" name="league" placeholder="Sr. Men's Volleyball">
+        </div>
+        <div class="input-div">
+            <label for="subtext">Subtext</label>
+            <input type="text" id="subtext" name="subtext" placeholder="Strathcona High School">
+        </div>
+        <div class="input-div">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="input-div">
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" value="06:30" required>
+        </div>
+        <div class="teams-wrapper">
+            <div class="team-info">
+                <h2>Home Team</h2>
+                <div class="input-div">
+                    <label for="home-name">Team Name</label>
+                    <input type="text" id="home-name" name="home-name" placeholder="Strathcona">
+                </div>
+                <div class="input-div">
+                    <label for="home-short">Short Name</label>
+                    <input type="text" id="home-short" name="home-short" placeholder="Scona">
+                </div>
+                <div class="input-div">
+                    <label for="home-color">Color (Hex)</label>
+                    <input type="color" id="home-color" name="home-color" value="#BF0D3E">
+                </div>
+                <div class="input-div">
+                    <p>Text Color</p>
+                    <div>
+                        <input type="radio" id="home-lightcolor" name="home-textcolor" value="light" checked>
+                        <label for="home-lightcolor">Light</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="home-darkcolor" name="home-textcolor" value="dark">
+                        <label for="home-darkcolor">Dark</label>
+                    </div>
+                </div>
+                <div class="input-div">
+                    <label for="home-logo">Logo</label>
+                    <input type="file" id="home-logo" name="home-logo" accept="image/png">
+                </div>
+            </div>
+            <div class="team-info">
+                <h2>Away Team</h2>
+                <div class="input-div">
+                    <label for="away-name">Team Name</label>
+                    <input type="text" id="away-name" name="away-name" placeholder="Visiting Team">
+                </div>
+                <div class="input-div">
+                    <label for="away-short">Short Name</label>
+                    <input type="text" id="away-short" name="away-short" placeholder="Visiting">
+                </div>
+                <div class="input-div">
+                    <label for="away-color">Color (Hex)</label>
+                    <input type="color" id="away-color" name="away-color">
+                </div>
+                <div class="input-div">
+                    <p>Text Color</p>
+                    <div>
+                        <input type="radio" id="away-lightcolor" name="away-textcolor" value="light" checked>
+                        <label for="away-lightcolor">Light</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="away-darkcolor" name="away-textcolor" value="dark">
+                        <label for="away-darkcolor">Dark</label>
+                    </div>
+                </div>
+                <div class="input-div">
+                    <label for="away-logo">Logo</label>
+                    <input type="file" id="away-logo" name="away-logo" accept="image/png">
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="save">GENERATE GAME DATA</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
