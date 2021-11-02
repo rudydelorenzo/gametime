@@ -1,12 +1,13 @@
 body {
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     margin: 0;
     box-sizing: content-box;
 
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -73,7 +74,7 @@ div.teams-wrapper > div.input-div {
 }
 
 div.buttons {
-    margin: 40px;
+    margin-top: 40px;
 
     display: flex;
     flex-direction: row;
@@ -85,9 +86,19 @@ button {
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 5px;
+    margin: 0 10px;
 
 }
 
 button.save {
 
+}
+
+button.open {
+
+}
+
+#copyright {
+    opacity: 0.8;
+    font-size: 12px;
 }

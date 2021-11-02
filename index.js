@@ -32,6 +32,9 @@ function download(filename, contents) {
     document.body.removeChild(element);
 }
 
+// Set copyright notice
+document.querySelector("#copyright").textContent = `© Rudy de Lorenzo, ${new Date().getFullYear()}`;
+
 // Set smart placeholders
 document.querySelector("#date").valueAsDate = new Date();
 document.querySelector("#time").value = `${new Date().getHours().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}:${new Date().getMinutes().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}`;
