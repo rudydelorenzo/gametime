@@ -99,8 +99,8 @@ div.buttons {
 }
 
 button {
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 17px;
+    padding: 15px 25px;
     border-radius: 12px;
     margin: 0 10px;
 
@@ -118,11 +118,15 @@ button:hover {
 }
 
 button.save {
-
+    border: 2px solid #00213B;
+    background-color: #00213B;
+    color: #FAFAFA;
 }
 
 button.open {
-
+    border: 2px solid #00213B;
+    background-color: transparent;
+    color: #00213B;
 }
 
 #copyright {
