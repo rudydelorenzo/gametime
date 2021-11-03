@@ -22,6 +22,10 @@ div.main-wrapper {
     max-width: 700px;
 }
 
+img.banner {
+    max-width: 100%;
+}
+
 div.input-div {
     width: 100%;
     margin: 3px 0;
@@ -73,6 +77,18 @@ div.teams-wrapper > div.input-div {
     width: calc(100%/2);
 }
 
+input[type=file]:hover {
+    cursor: pointer;
+}
+
+input[type=color]:hover {
+    cursor: pointer;
+}
+
+input[type=radio]:hover {
+    cursor: pointer;
+}
+
 div.buttons {
     margin-top: 40px;
 
@@ -85,13 +101,16 @@ div.buttons {
 button {
     font-size: 20px;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 12px;
     margin: 0 10px;
+
+    cursor: default;
 
     transition: all 0.2s ease-in-out;
 }
 button:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #open-file-input {
