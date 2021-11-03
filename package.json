@@ -1,6 +1,6 @@
 {
   "name": "gametime",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Electron app to make game-data.json files.",
   "main": "app.js",
   "scripts": {
@@ -30,7 +30,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "gametime"
+            "name": "GameTime"
           }
         },
         {

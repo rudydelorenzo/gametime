@@ -85,9 +85,17 @@ div.buttons {
 button {
     font-size: 20px;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 0 10px;
 
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+#open-file-input {
+    visibility: hidden;
 }
 
 button.save {
