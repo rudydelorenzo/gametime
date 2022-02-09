@@ -117,7 +117,7 @@ document.querySelector("button.save").addEventListener("click", async () => {
     homeData["color"] = getValueOrPlaceholder("home-color").toUpperCase();
     homeData["text_color"] = document.querySelector('input[name="home-textcolor"]:checked').value === "light" ? lightTextColor : darkTextColor;
     // TODO: Use File API, instead of this dirty method
-    homeData["logo"] = `${path_to_logos}${getValueOrPlaceholder("home-logo").split(/(\\|\/)/g).pop()}`;
+    homeData["logo"] = document.getElementById("home-logo").files[0].path;
 
     data["home"] = homeData;
 
@@ -128,7 +128,7 @@ document.querySelector("button.save").addEventListener("click", async () => {
     awayData["color"] = getValueOrPlaceholder("away-color").toUpperCase();
     awayData["text_color"] = document.querySelector('input[name="away-textcolor"]:checked').value === "light" ? lightTextColor : darkTextColor;
     // TODO: Use File API, instead of this dirty method
-    awayData["logo"] = `${path_to_logos}${getValueOrPlaceholder("away-logo").split(/(\\|\/)/g).pop()}`;
+    awayData["logo"] = document.getElementById("away-logo").files[0].path;
 
     data["away"] = awayData;
 
