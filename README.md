@@ -2,7 +2,7 @@
 
 # Welcome to GameTime
 
-An Electron app born out of necessity. It provides a GUI to generate JSON files that are in turn used to make graphics 
+An Electron app born out of necessity. It provides a GUI to generate JSON files that are in turn used to make skinned broadcast graphics 
 in NewBlue Titler.
 
 ## Developer Notes
